@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Acerca de nosotros</title>
-</head>
-<body>
-    <h1>Página About</h1>
-    <p>Esta página fue creada en la rama feature/about para probar el flujo de trabajo.</p>
-    <a href="{% url 'home' %}">Volver al Home</a>
-</body>
-</html>
+{% extends "_base.html" %}
+
+{% block title %}Acerca de{% endblock title %}
+
+{% block content %}
+    <h1>Sobre Nosotros</h1>
+    <p>Estamos aprendiendo Django paso a paso con Git.</p>
+{% endblock content %}
